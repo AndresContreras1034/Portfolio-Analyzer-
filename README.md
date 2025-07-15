@@ -72,10 +72,9 @@ Este proyecto está en construcción. A futuro se incluirán:
 pip install -r requirements.txt
 python main.py
 ```
-```
+## 📦 Diagrama UML – Sistema de Pedidos
 
-Prueba de UML
-
+```mermaid
 classDiagram
     class Usuario {
         +String nombre
