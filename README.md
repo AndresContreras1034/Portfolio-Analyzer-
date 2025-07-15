@@ -72,3 +72,36 @@ Este proyecto está en construcción. A futuro se incluirán:
 pip install -r requirements.txt
 python main.py
 ```
+Prueba de UML
+classDiagram
+    class Usuario {
+        +String nombre
+        +String correo
+        +registrar()
+        +login()
+    }
+
+    class Pedido {
+        +int id
+        +Date fecha
+        +agregarProducto()
+        +calcularTotal()
+    }
+
+    class Producto {
+        +String nombre
+        +double precio
+        +String categoria
+    }
+
+    class Carrito {
+        +List<Producto> productos
+        +agregarProducto()
+        +eliminarProducto()
+        +vaciar()
+    }
+
+    Usuario --> Carrito : tiene
+    Carrito --> Producto : contiene
+    Usuario --> Pedido : realiza
+    Pedido --> Producto : incluye
