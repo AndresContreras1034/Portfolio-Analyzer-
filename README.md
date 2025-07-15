@@ -72,7 +72,10 @@ Este proyecto está en construcción. A futuro se incluirán:
 pip install -r requirements.txt
 python main.py
 ```
+```
+
 Prueba de UML
+
 classDiagram
     class Usuario {
         +String nombre
